@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="Kasztany.Turtles.controller.PlayerData"
+      alignment="CENTER"
+      spacing="10"
+      prefWidth="300">
+    <Text fx:id="playerName"/>
+</VBox>

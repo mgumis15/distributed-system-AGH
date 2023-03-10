@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="zadanie.client.ChatController"
+            prefHeight="600.0" prefWidth="600.0"
+            style="-fx-padding: 10;-fx-spacing: 10"
+>
+<ListView fx:id="messagesView" prefWidth="600" prefHeight="350" maxHeight="350"/>
+    <TextField fx:id="newMessageField"/>
+<Button fx:id="sendMessageButton" defaultButton="true" onAction="#buttonAction" text="Send message" alignment="CENTER"/>
+    <HBox>
+        <Label text="Current Protocol: "/>
+        <Label fx:id="protocolLabel" text="TCP"/>
+    </HBox>
+    <Label fx:id="errorLabel" style="-fx-text-fill: red"/>
+</VBox>
